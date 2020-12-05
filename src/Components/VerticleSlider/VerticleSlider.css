@@ -1,0 +1,27 @@
+.main {
+  color: white;
+}
+
+.slider {
+  margin-left: 20em;
+}
+
+.networth {
+  margin-bottom: 3em;
+}
+
+.MuiSlider-vertical .MuiSlider-rail {
+  width: 0.5em;
+  background-color: white;
+}
+
+.MuiSlider-track {
+  height: 0.3em;
+  background-color: rgb(212, 212, 212);
+}
+
+.MuiSlider-markLabel {
+  color: white;
+  font-size: 20px;
+  margin-left: 1em;
+}

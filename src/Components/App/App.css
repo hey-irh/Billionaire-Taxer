@@ -1,0 +1,12 @@
+.entire {
+  text-align: center;
+}
+
+h1 {
+  background-color: #282c34;
+
+  margin: 0.2em;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 10em;
+  color: white;
+}
