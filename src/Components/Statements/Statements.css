@@ -1,13 +1,12 @@
 .networth {
-  text-align: center;
+  text-align: right;
   position: sticky;
   top: 0.5em;
-  background-color: #282c34;
   font-family: 'Alegreya Sans', sans-serif;
-  padding-bottom: 3em;
   color: white;
 }
 
 .textBox {
   padding-right: 5em;
+  height: 100%;
 }

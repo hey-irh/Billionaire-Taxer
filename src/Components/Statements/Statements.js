@@ -18,14 +18,16 @@ function Statements() {
 
   return (
     <div className='textBox'>
-      <h2 className='networth'>
-        You've reduced {name} Net Worth to: ${remainingWealth.toLocaleString()}
-      </h2>
-      <Paragraph
-        ItemNumber={hospitals}
-        text={'USA hospitals in USA'}
-        emoji='hospitals'
-      />
+      <div className='networth'>
+        <h2>
+          You've reduced {name} Net Worth to: ${remainingWealth.toLocaleString()}
+        </h2>
+        <Paragraph
+          ItemNumber={hospitals}
+          text={'hospitals in USA'}
+          emoji='hospitals'
+          firstStatement='true'
+        />
       <Paragraph
         ItemNumber={cash}
         text={'cash per person in USA'}
@@ -51,6 +53,7 @@ function Statements() {
         text={'full university scolarships'}
         emoji='👩‍🎓'
       />
+      </div>
     </div>
   );
 }
