@@ -1,5 +1,17 @@
 .statements {
-  padding: 5em;
   font-size: 25px;
-  margin-bottom: 500px;
+  text-align: right;
+}
+
+p {
+  font-size: 20px;
+  background-color: #282c34;
+}
+
+.paragraph {
+  padding-bottom: 10em;
+}
+
+.rendering {
+  font-family: 'Alegreya Sans', sans-serif;
 }
