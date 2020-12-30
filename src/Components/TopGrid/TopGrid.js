@@ -45,8 +45,9 @@ function TopGrid() {
               />
 
               <img
-                src='https://images-na.ssl-images-amazon.com/images/I/61dJJZtbdNL._AC_SY355_.jpg'
+                src='https://www.clipartkey.com/mpngs/m/249-2495523_jeff-bezos-investor-jeff-bezos-png.png'
                 alt='Jeff Bezos'
+                width='300px'
                 onClick={() => {
                   setbillionaire(183600000000);
                   setname('Jeff Bezos');

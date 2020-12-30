@@ -1,9 +1,11 @@
 import { useAppContext } from '../../Context';
 import './Paragraphs.css';
 
+
 function Paragraph({ ItemNumber, text, emoji, firstStatement }) {
   const { name, tax } = useAppContext();
 
+function Paragraph({ ItemNumber, text, emoji }) {
   function selectFont() {
     if (ItemNumber >= 1 && ItemNumber < 50) {
       return '40px';
@@ -27,7 +29,7 @@ function Paragraph({ ItemNumber, text, emoji, firstStatement }) {
             maxHeight: 500,
           }}
         >
-          {/* {`${emoji} `.repeat(ItemNumber)} */}
+          {`${emoji} `.repeat(ItemNumber)}
         </p>
       );
     }
@@ -54,8 +56,11 @@ function Paragraph({ ItemNumber, text, emoji, firstStatement }) {
         <p>
           + {ItemNumber} {text}
         </p>
+        {/* <div className='rendering'>{renderImage()}</div> */}
+        <p style={{ fontSize: '100px' }}>{ItemNumber}</p>
+        <p>{text}</p>
+
       </div>
-      <div className='rendering'>{renderImage()}</div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import Paragraph from '../Paragraphs/Paragraphs';
 import './Statements.css';
 
 function Statements() {
-  const { name, remainingWealth } = useAppContext();
+  const { name, remainingWealth, tax } = useAppContext();
   const {
     usaSchools,
     waterWells,
@@ -28,6 +28,14 @@ function Statements() {
           emoji='hospitals'
           firstStatement='true'
         />
+      <h2 className='tax'>
+        By taxing {name} {tax}% it could pay for:
+      </h2>
+      <Paragraph
+        ItemNumber={hospitals}
+        text={'hospitals in USA'}
+        emoji='hospitals'
+      />
       <Paragraph
         ItemNumber={cash}
         text={'cash per person in USA'}

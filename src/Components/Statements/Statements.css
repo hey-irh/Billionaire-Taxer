@@ -1,6 +1,19 @@
+.tax {
+  text-align: center;
+  position: sticky;
+  top: 0.5em;
+  background-color: #282c34;
+  font-family: 'Alegreya Sans', sans-serif;
+  padding-bottom: 3em;
+  color: white;
+}
+
 .networth {
   text-align: right;
   position: sticky;
+  position: absolute;
+
+  bottom: 0;
   top: 0.5em;
   font-family: 'Alegreya Sans', sans-serif;
   color: white;
