@@ -71,7 +71,7 @@ export default function VerticalSlider(props) {
                 <div>
                   {' '}
                   Tax {name} Wealth {tax}% <br></br> <br></br>
-                  To reduce his net worth to: ${value.toLocaleString()}
+                  Reduced net worth: ${value.toLocaleString()}
                 </div>
               )}
             />

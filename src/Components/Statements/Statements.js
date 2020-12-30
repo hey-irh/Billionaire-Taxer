@@ -18,6 +18,16 @@ function Statements() {
 
   return (
     <div className='textBox'>
+      <div className='networth'>
+        <h2>
+          You've reduced {name} Net Worth to: ${remainingWealth.toLocaleString()}
+        </h2>
+        <Paragraph
+          ItemNumber={hospitals}
+          text={'hospitals in USA'}
+          emoji='hospitals'
+          firstStatement='true'
+        />
       <h2 className='tax'>
         By taxing {name} {tax}% it could pay for:
       </h2>
@@ -51,6 +61,7 @@ function Statements() {
         text={'full university scolarships'}
         emoji='👩‍🎓'
       />
+      </div>
     </div>
   );
 }
