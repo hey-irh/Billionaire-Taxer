@@ -6,7 +6,7 @@ import Paragraph from '../Paragraphs/Paragraphs';
 import './Statements.css';
 
 function Statements() {
-  const { name, remainingWealth } = useAppContext();
+  const { name, remainingWealth, tax } = useAppContext();
   const {
     usaSchools,
     waterWells,
@@ -18,12 +18,12 @@ function Statements() {
 
   return (
     <div className='textBox'>
-      <h2 className='networth'>
-        You've reduced {name} Net Worth to: ${remainingWealth.toLocaleString()}
+      <h2 className='tax'>
+        By taxing {name} {tax}% it could pay for:
       </h2>
       <Paragraph
         ItemNumber={hospitals}
-        text={'USA hospitals in USA'}
+        text={'hospitals in USA'}
         emoji='hospitals'
       />
       <Paragraph
