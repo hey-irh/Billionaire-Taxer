@@ -11,6 +11,9 @@ export function StatementProvider({ children }) {
   const [cash, setcash] = useState(0);
   const [africaSchools, setAfricaSchools] = useState(0);
   const [uniScolarship, setUniScolarship] = useState(0);
+  const [bikes, setbikes] = useState(0);
+  const [clothing, setclothing] = useState(0);
+  const [homelessNights, sethomelessNights] = useState(0);
 
   useEffect(() => {
     setwaterWells(
@@ -33,6 +36,15 @@ export function StatementProvider({ children }) {
     setUniScolarship(
       Math.round((billionaire - remainingWealth) / 60000).toLocaleString()
     );
+    setbikes(
+      Math.round((billionaire - remainingWealth) / 199).toLocaleString()
+    );
+    setclothing(
+      Math.round((billionaire - remainingWealth) / 59).toLocaleString()
+    );
+    sethomelessNights(
+      Math.round((billionaire - remainingWealth) / 25).toLocaleString()
+    );
   }, [remainingWealth]);
 
   return (
@@ -44,6 +56,9 @@ export function StatementProvider({ children }) {
         cash: cash,
         africaSchools: africaSchools,
         uniScolarship: uniScolarship,
+        bikes: bikes,
+        clothing: clothing,
+        homelessNights: homelessNights,
       }}
     >
       {children}

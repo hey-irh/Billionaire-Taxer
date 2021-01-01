@@ -42,7 +42,7 @@ export default function VerticalSlider(props) {
       ...marksList,
       {
         value: billionaire,
-        label: `${name} current wealth: $${billionaire.toLocaleString()}`,
+        label: `${name} net worth: $${billionaire.toLocaleString()}`,
       },
     ]);
   }, [billionaire]);
@@ -68,7 +68,7 @@ export default function VerticalSlider(props) {
               marks={marksList}
               valueLabelDisplay='on'
               valueLabelFormat={(value) => (
-                <div>
+                <div id='sliderText'>
                   {' '}
                   Tax {name} Wealth {tax}% <br></br> <br></br>
                   To reduce his net worth to: ${value.toLocaleString()}

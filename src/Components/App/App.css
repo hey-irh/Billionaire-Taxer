@@ -5,7 +5,31 @@
 h1 {
   background-color: #282c34;
   margin: 0.2em;
-  font-family: "Alegreya Sans", sans-serif;
-  font-size: 10em;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 8em;
   color: white;
+}
+
+.bottomStatement {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 3em;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+a {
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .slider {
+    margin-left: 2em;
+  }
+  .entire {
+    text-align: center;
+    font-size: 2em;
+  }
+  h1 {
+    font-size: 4em;
+  }
 }

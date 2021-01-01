@@ -10,6 +10,13 @@ function App() {
       <div>
         <TopGrid />
         <MainGrid className='mainGrid' />
+        <div className='bottomStatement'>
+          {' '}
+          Learn more about wealth inequality at: <br></br>
+          <a href='https://inequality.org/facts/wealth-inequality/'>
+            inequality.org/facts/wealth-inequality/
+          </a>
+        </div>
       </div>
     </AppProvider>
   );

@@ -36,11 +36,11 @@
 }
 
 .PrivateValueLabel-circle-9 {
-  background-color: #8b0000;
+  background-color: #99cc66;
 }
 
 .MuiSlider-thumb {
-  background-color: #8b0000;
+  background-color: #99cc66;
 }
 
 .MuiSlider-vertical .MuiSlider-track {
@@ -48,5 +48,9 @@
 }
 
 .main {
-  padding-top: 8em;
+  padding-top: 10em;
+}
+
+#sliderText {
+  background-color: #282c34;
 }

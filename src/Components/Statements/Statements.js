@@ -1,55 +1,71 @@
 import React from 'react';
 import { useAppContext } from '../../Context';
 import { useStatementContext } from '../../StatementContext';
+import Paper from '@material-ui/core/Paper';
 
 import Paragraph from '../Paragraphs/Paragraphs';
 import './Statements.css';
 
 function Statements() {
-  const { name, remainingWealth, tax } = useAppContext();
+  const { name, tax } = useAppContext();
   const {
     usaSchools,
     waterWells,
     hospitals,
     cash,
     africaSchools,
-    UniScolarship,
+    uniScolarship,
+    bikes,
+    clothing,
+    homelessNights,
   } = useStatementContext();
 
   return (
     <div className='textBox'>
       <h2 className='tax'>
-        By taxing {name} {tax}% it could pay for:
+        By taxing {name} wealth {tax}% it could pay for:
       </h2>
+      <Paragraph ItemNumber={hospitals} text={'Hospitals in USA'} emoji='🏥' />
       <Paragraph
-        ItemNumber={hospitals}
-        text={'hospitals in USA'}
-        emoji='hospitals'
+        ItemNumber={waterWells}
+        text={'Water wells in Africa'}
+        emoji='🚰'
       />
+
       <Paragraph
-        ItemNumber={cash}
-        text={'cash per person in USA'}
-        emoji='$$$'
+        ItemNumber={clothing}
+        text={'Winter clothing for a child'}
+        emoji='🧤'
       />
       <Paragraph
         ItemNumber={usaSchools}
-        text={'median sized schools in USA'}
-        emoji='schools'
+        text={'Median sized schools in USA'}
+        emoji='📚'
       />
       <Paragraph
-        ItemNumber={waterWells}
-        text={'water wells in Africa'}
-        emoji='🚰'
+        ItemNumber={cash}
+        text={'Cash per person in the US'}
+        emoji='💸'
       />
       <Paragraph
         ItemNumber={africaSchools}
-        text={'secondary schools in Africa'}
-        emoji='👩‍🏫'
+        text={'Secondary schools in Africa'}
+        emoji='✏️'
       />
       <Paragraph
-        ItemNumber={UniScolarship}
-        text={'full university scolarships'}
+        ItemNumber={uniScolarship}
+        text={'Full university scolarships in USA'}
         emoji='👩‍🎓'
+      />
+      <Paragraph
+        ItemNumber={bikes}
+        text={'Bikes for school children & health workers'}
+        emoji='🚲'
+      />
+      <Paragraph
+        ItemNumber={homelessNights}
+        text={'nights in a homeless shelter'}
+        emoji='🛏'
       />
     </div>
   );

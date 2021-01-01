@@ -36,7 +36,9 @@ function Paragraph({ ItemNumber, text, emoji }) {
       <div className='statements'>
         {/* <div className='rendering'>{renderImage()}</div> */}
         <p style={{ fontSize: '100px' }}>{ItemNumber}</p>
-        <p>{text}</p>
+        <p>
+          {text} {emoji}
+        </p>
       </div>
     </div>
   );

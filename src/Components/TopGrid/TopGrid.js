@@ -3,6 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useAppContext } from '../../Context';
 import Grid from '@material-ui/core/Grid';
 import './TopGrid.css';
+import JeffBezospic from './JeffBezos.png';
+import markZuckpic from './markZuckerberg.png';
+import bernardArnaultPic from './bernardArnault.png';
+import billGatesPic from './bill gates.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,26 +38,51 @@ function TopGrid() {
           <div className='entire'>
             <div className='headers'>
               <h1>BILLIONAIRE TAXER</h1>
-              <img
-                src='https://pngimg.com/uploads/mark_zuckerberg/mark_zuckerberg_PNG34.png'
-                alt='Mark Zuckerberg'
-                onClick={() => {
-                  setbillionaire(101700000000);
-                  setname('Mark Zuckerberg');
-                  setremainingWealth(101700000000);
-                }}
-              />
+              <p className='picker'>Pick your billionaire</p>
+              <div className='images'>
+                <img
+                  src={billGatesPic}
+                  alt='Bill Gates'
+                  width='200em'
+                  onClick={() => {
+                    setbillionaire(120000000000);
+                    setname('Bill Gates');
+                    setremainingWealth(120000000000);
+                  }}
+                />
+                <img
+                  src={markZuckpic}
+                  alt='Mark Zuckerberg'
+                  className='MarkZuckerberg'
+                  onClick={() => {
+                    setbillionaire(99900000000);
+                    setname('Mark Zuckerberg');
+                    setremainingWealth(99900000000);
+                  }}
+                />
 
-              <img
-                src='https://www.clipartkey.com/mpngs/m/249-2495523_jeff-bezos-investor-jeff-bezos-png.png'
-                alt='Jeff Bezos'
-                width='300px'
-                onClick={() => {
-                  setbillionaire(183600000000);
-                  setname('Jeff Bezos');
-                  setremainingWealth(183600000000);
-                }}
-              />
+                <img
+                  src={JeffBezospic}
+                  alt='Jeff Bezos'
+                  width='400em'
+                  onClick={() => {
+                    setbillionaire(191200000000);
+                    setname('Jeff Bezos');
+                    setremainingWealth(191200000000);
+                  }}
+                />
+
+                <img
+                  src={bernardArnaultPic}
+                  alt='Bernard Arnault'
+                  width='350em'
+                  onClick={() => {
+                    setbillionaire(151700000000);
+                    setname('Bernard Arnault');
+                    setremainingWealth(151700000000);
+                  }}
+                />
+              </div>
             </div>
             <h2 className='initialStatement'>
               {name} net worth is{' '}
