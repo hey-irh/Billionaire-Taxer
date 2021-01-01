@@ -34,7 +34,7 @@ function TopGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={12}>
+        <Grid item m={12}>
           <div className='entire'>
             <div className='headers'>
               <h1>BILLIONAIRE TAXER</h1>
