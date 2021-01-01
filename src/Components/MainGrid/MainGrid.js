@@ -23,11 +23,11 @@ function CenteredGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={4}>
+        <Grid item m={4}>
           <VerticalSlider />
         </Grid>
         <StatementProvider>
-          <Grid item xs={8}>
+          <Grid item m={8}>
             <Statements />
           </Grid>
         </StatementProvider>
