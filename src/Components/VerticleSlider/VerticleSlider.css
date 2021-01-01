@@ -28,11 +28,12 @@
 }
 
 .PrivateValueLabel-label-10 {
-  margin-right: 20em;
+  margin-right: 12em; 
+  margin-bottom: 6em;
 }
 
 .PrivateValueLabel-offset-8 {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .PrivateValueLabel-circle-9 {
@@ -53,4 +54,12 @@
 
 #sliderText {
   background-color: #282c34;
+}
+
+@media (max-width:600px) {
+
+  .PrivateValueLabel-offset-8 {
+    font-size: 1.8em;
+  }
+  
 }
