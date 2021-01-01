@@ -34,7 +34,7 @@ function TopGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item m={12}>
+        <Grid item xs={12}>
           <div className='entire'>
             <div className='headers'>
               <h1>BILLIONAIRE TAXER</h1>
@@ -43,6 +43,7 @@ function TopGrid() {
                 <img
                   src={billGatesPic}
                   alt='Bill Gates'
+                  className='billionaire-img'
                   width='200em'
                   onClick={() => {
                     setbillionaire(120000000000);
@@ -53,7 +54,7 @@ function TopGrid() {
                 <img
                   src={markZuckpic}
                   alt='Mark Zuckerberg'
-                  className='MarkZuckerberg'
+                  className='MarkZuckerberg billionaire-img'
                   onClick={() => {
                     setbillionaire(99900000000);
                     setname('Mark Zuckerberg');
@@ -64,6 +65,7 @@ function TopGrid() {
                 <img
                   src={JeffBezospic}
                   alt='Jeff Bezos'
+                  className='billionaire-img'
                   width='400em'
                   onClick={() => {
                     setbillionaire(191200000000);
@@ -75,6 +77,7 @@ function TopGrid() {
                 <img
                   src={bernardArnaultPic}
                   alt='Bernard Arnault'
+                  className='billionaire-img'
                   width='350em'
                   onClick={() => {
                     setbillionaire(151700000000);

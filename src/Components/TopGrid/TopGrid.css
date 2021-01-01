@@ -21,7 +21,7 @@
   animation-iteration-count: infinite;
 }
 
-img:hover {
+.billionaire-img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -76,5 +76,9 @@ img:hover {
   .initialStatement {
     font-size: 2em;
   }
-
+  
+  .billionaire-img {
+    max-width: 9em;
+  }
+  
 }
