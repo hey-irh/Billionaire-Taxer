@@ -29,6 +29,19 @@ export default function VerticalSlider(props) {
 
   const classes = useStyles();
 
+  // window.addEventListener('load', function () {
+  //   setTimeout(function () {
+  //     console.log('RUNNING');
+  //     var scrollPos =
+  //       window.pageYOffset ||
+  //       document.documentElement.scrollTop ||
+  //       document.body.scrollTop;
+  //     if (scrollPos < 1) {
+  //       window.scrollTo(0, 1);
+  //     }
+  //   }, 0);
+  // });
+
   function onChangeFunction(event, value) {
     setremainingWealth(value);
 

@@ -1,35 +1,49 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAppContext } from '../../Context';
 import { useStatementContext } from '../../StatementContext';
-import Paper from '@material-ui/core/Paper';
 
 import Paragraph from '../Paragraphs/Paragraphs';
 import './Statements.css';
 
 function Statements() {
-  const { name, tax } = useAppContext();
+  const { name, tax, remainingWealth } = useAppContext();
   const {
     usaSchools,
-    waterWells,
+    solarEnergy,
     hospitals,
     cash,
-    africaSchools,
+    schoolMeals,
     uniScolarship,
-    bikes,
+    covid,
     clothing,
     homelessNights,
+    cancerTreatment,
+    houses,
+    libraries,
+    playground,
+    mileRoad,
   } = useStatementContext();
+  const [energyhome, setenergyhome] = useState(0);
+
+  useEffect(() => {
+    let energyhomecalc = parseInt(solarEnergy);
+    setenergyhome(energyhomecalc * 1000 * 200);
+  }, [remainingWealth, solarEnergy]);
 
   return (
     <div className='textBox'>
       <h2 className='tax'>
         By taxing {name} wealth {tax}% it could pay for:
       </h2>
-      <Paragraph ItemNumber={hospitals} text={'Hospitals in USA'} emoji='🏥' />
       <Paragraph
-        ItemNumber={waterWells}
-        text={'Water wells in Africa'}
-        emoji='🚰'
+        ItemNumber={hospitals}
+        text={'New hospitals in the US'}
+        emoji='🏥'
+      />
+      <Paragraph
+        ItemNumber={solarEnergy}
+        text={`Kilowatt's of solar energy to supply ${energyhome} homes`}
+        emoji='🌞'
       />
 
       <Paragraph
@@ -39,7 +53,7 @@ function Statements() {
       />
       <Paragraph
         ItemNumber={usaSchools}
-        text={'Median sized schools in USA'}
+        text={'Median sized schools in the US'}
         emoji='📚'
       />
       <Paragraph
@@ -48,24 +62,41 @@ function Statements() {
         emoji='💸'
       />
       <Paragraph
-        ItemNumber={africaSchools}
-        text={'Secondary schools in Africa'}
-        emoji='✏️'
+        ItemNumber={schoolMeals}
+        text={'Elementary school meals'}
+        emoji='🍛'
       />
       <Paragraph
         ItemNumber={uniScolarship}
-        text={'Full university scolarships in USA'}
+        text={'Full US university scolarships'}
         emoji='👩‍🎓'
       />
       <Paragraph
-        ItemNumber={bikes}
-        text={'Bikes for school children & health workers'}
-        emoji='🚲'
+        ItemNumber={covid}
+        text={'Pfizer COVID vaccinations'}
+        emoji='💉'
       />
       <Paragraph
         ItemNumber={homelessNights}
         text={'nights in a homeless shelter'}
         emoji='🛏'
+      />
+      <Paragraph
+        ItemNumber={cancerTreatment}
+        text={'patients cancer treatment'}
+        emoji='🚑'
+      />
+      <Paragraph ItemNumber={libraries} text={'US libraries'} emoji='📚' />
+      <Paragraph
+        ItemNumber={mileRoad}
+        text={'miles of highway road repaired'}
+        emoji='🚦'
+      />
+      <Paragraph ItemNumber={houses} text={'avg. homes in the US'} emoji='🏡' />
+      <Paragraph
+        ItemNumber={playground}
+        text={'playgrounds for kids'}
+        emoji='🪁'
       />
     </div>
   );

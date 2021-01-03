@@ -24,7 +24,7 @@
 }
 
 .PrivateValueLabel-label-10 {
-  margin-right: 12em; 
+  margin-right: 12em;
   margin-bottom: 6em;
 }
 
@@ -44,20 +44,17 @@
   width: 0.8em;
 }
 
-
 #sliderText {
   background-color: #282c34;
 }
 
 /* styles for large screens */
-@media (min-width:600px) {
-
+@media (min-width: 600px) {
   .main {
     padding-top: 10em;
   }
-  
+
   .slider {
     margin-left: 20em;
   }
-    
 }
