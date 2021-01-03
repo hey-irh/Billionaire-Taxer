@@ -1,18 +1,19 @@
 .initialStatement {
-  border-radius: 0.5em;
-  background-color: #f9f9f9;
-  color: #282c34;
-  box-shadow: 5px 10px;
-  padding: 1em;
-  display: inline-block;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 0.9em;
+  color: #f9f9f9;
+  border-radius: 0.5em;
+  background-color: #282c34;
+  border: 1px solid #000000;
+  box-shadow: 5px 10px #00000061;
+  padding: 1em;
+  margin: 1em;
+  display: inline-block;
 }
 
 .picker {
   text-align: center;
   font-size: 0.6em;
-  margin-bottom: -2.5em;
 }
 
 .picker:hover {
@@ -20,7 +21,7 @@
   animation-iteration-count: infinite;
 }
 
-img:hover {
+.billionaire-img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -63,4 +64,21 @@ img:hover {
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+
+/* Small device styles */
+@media (max-width:600px) {
+
+  .picker {
+    font-size: 2em;
+  }
+
+  .initialStatement {
+    font-size: 2em;
+  }
+  
+  .billionaire-img {
+    max-width: 9em;
+  }
+  
 }

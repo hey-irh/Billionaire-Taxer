@@ -1,7 +1,7 @@
 .tax {
   text-align: center;
   position: sticky;
-  font-size: 3em;
+  font-size: 1.5em;
   top: 0em;
   background-color: #282c34;
   font-family: 'Alegreya Sans', sans-serif;
@@ -11,12 +11,6 @@
 }
 
 .networth {
-  text-align: center;
-  position: sticky;
-  position: absolute;
-
-  bottom: 0;
-  top: 0.5em;
   background-color: #282c34;
   font-family: 'Alegreya Sans', sans-serif;
   padding-bottom: 3em;
@@ -24,5 +18,19 @@
 }
 
 .textBox {
-  padding-right: 5em;
+  height: 100%;
+}
+
+/* styles for large screens */
+@media (min-width:600px) {
+
+  .tax {
+    font-size: 3em;
+  }
+
+  .textBox {
+    padding-right: 5em;
+  }
+  
+
 }

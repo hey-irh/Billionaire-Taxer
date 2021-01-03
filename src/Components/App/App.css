@@ -6,7 +6,7 @@ h1 {
   background-color: #282c34;
   margin: 0.2em;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 8em;
+  font-size: 4em;
   color: white;
 }
 
@@ -29,7 +29,5 @@ a {
     text-align: center;
     font-size: 2em;
   }
-  h1 {
-    font-size: 4em;
-  }
+  
 }
