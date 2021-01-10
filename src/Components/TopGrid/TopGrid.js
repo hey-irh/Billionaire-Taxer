@@ -4,7 +4,7 @@ import { useAppContext } from '../../Context';
 import Grid from '@material-ui/core/Grid';
 import './TopGrid.css';
 import JeffBezospic from './JeffBezoslaughing.png';
-import markZuckpic from './markZuckerberg.png';
+import markZuckpic from './markZuckerbergWave.png';
 import ElonMuskPic from './ElonMuskPic.png';
 import billGatesPic from './bill gates.png';
 
@@ -76,6 +76,7 @@ function TopGrid() {
                 <img
                   src={markZuckpic}
                   alt='Mark Zuckerberg'
+                  width='360em'
                   className='MarkZuckerberg billionaire-img'
                   onClick={() => {
                     setbillionaire(101000000000);
