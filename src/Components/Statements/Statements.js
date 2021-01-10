@@ -37,38 +37,38 @@ function Statements() {
       </h2>
       <Paragraph
         ItemNumber={hospitals}
-        text={'New hospitals in the US'}
+        text={'new hospitals in the US'}
         emoji='🏥'
       />
       <Paragraph
         ItemNumber={solarEnergy}
-        text={`Kilowatt's of solar energy to supply ${energyhome} homes`}
+        text={`kilowatt's of solar energy to supply ${energyhome} homes`}
         emoji='🌞'
       />
 
       <Paragraph
         ItemNumber={clothing}
-        text={'Winter clothing for a child'}
+        text={'winter clothing for a child'}
         emoji='🧤'
       />
       <Paragraph
         ItemNumber={usaSchools}
-        text={'Median sized schools in the US'}
+        text={'median sized schools in the US'}
         emoji='📚'
       />
       <Paragraph
         ItemNumber={cash}
-        text={'Cash per person in the US'}
+        text={'cash per person in the US'}
         emoji='💸'
       />
       <Paragraph
         ItemNumber={schoolMeals}
-        text={'Elementary school meals'}
+        text={'elementary school meals'}
         emoji='🍛'
       />
       <Paragraph
         ItemNumber={uniScolarship}
-        text={'Full US university scolarships'}
+        text={'full US university scolarships'}
         emoji='👩‍🎓'
       />
       <Paragraph

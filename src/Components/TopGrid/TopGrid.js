@@ -3,9 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useAppContext } from '../../Context';
 import Grid from '@material-ui/core/Grid';
 import './TopGrid.css';
-import JeffBezospic from './JeffBezos.png';
+import JeffBezospic from './JeffBezoslaughing.png';
 import markZuckpic from './markZuckerberg.png';
-import bernardArnaultPic from './bernardArnault.png';
+import ElonMuskPic from './ElonMuskPic.png';
 import billGatesPic from './bill gates.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -41,14 +41,36 @@ function TopGrid() {
               <p className='picker'>Pick your billionaire</p>
               <div className='images'>
                 <img
+                  src={ElonMuskPic}
+                  alt='Elon Musk'
+                  className='billionaire-img'
+                  width='450em'
+                  onClick={() => {
+                    setbillionaire(209000000000);
+                    setname('Elon Musk');
+                    setremainingWealth(209000000000);
+                  }}
+                />
+                <img
                   src={billGatesPic}
                   alt='Bill Gates'
                   className='billionaire-img'
                   width='200em'
                   onClick={() => {
-                    setbillionaire(120000000000);
+                    setbillionaire(134000000000);
                     setname('Bill Gates');
-                    setremainingWealth(120000000000);
+                    setremainingWealth(134000000000);
+                  }}
+                />
+                <img
+                  src={JeffBezospic}
+                  alt='Jeff Bezos'
+                  className='billionaire-img'
+                  width='500em'
+                  onClick={() => {
+                    setbillionaire(186000000000);
+                    setname('Jeff Bezos');
+                    setremainingWealth(186000000000);
                   }}
                 />
                 <img
@@ -56,33 +78,9 @@ function TopGrid() {
                   alt='Mark Zuckerberg'
                   className='MarkZuckerberg billionaire-img'
                   onClick={() => {
-                    setbillionaire(99900000000);
+                    setbillionaire(101000000000);
                     setname('Mark Zuckerberg');
-                    setremainingWealth(99900000000);
-                  }}
-                />
-
-                <img
-                  src={JeffBezospic}
-                  alt='Jeff Bezos'
-                  className='billionaire-img'
-                  width='400em'
-                  onClick={() => {
-                    setbillionaire(191200000000);
-                    setname('Jeff Bezos');
-                    setremainingWealth(191200000000);
-                  }}
-                />
-
-                <img
-                  src={bernardArnaultPic}
-                  alt='Bernard Arnault'
-                  className='billionaire-img'
-                  width='350em'
-                  onClick={() => {
-                    setbillionaire(151700000000);
-                    setname('Bernard Arnault');
-                    setremainingWealth(151700000000);
+                    setremainingWealth(101000000000);
                   }}
                 />
               </div>

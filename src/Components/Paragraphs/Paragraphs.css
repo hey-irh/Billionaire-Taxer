@@ -6,6 +6,7 @@ p {
   font-size: 1.8em;
   background-color: #282c34;
   text-align: right;
+  padding: 0.4em;
 }
 
 .paragraph {
@@ -21,10 +22,8 @@ p {
 }
 
 /* Small device styles */
-@media (max-width:600px) {
-
+@media (max-width: 600px) {
   .big-number {
     font-size: 3em;
   }
-    
 }
