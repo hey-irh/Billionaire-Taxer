@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Billionaire-Taxer/static/css/main.d0b29a53.chunk.css",
+    "main.js": "/Billionaire-Taxer/static/js/main.c8d0094e.chunk.js",
+    "main.js.map": "/Billionaire-Taxer/static/js/main.c8d0094e.chunk.js.map",
+    "runtime-main.js": "/Billionaire-Taxer/static/js/runtime-main.7e8eb1f1.js",
+    "runtime-main.js.map": "/Billionaire-Taxer/static/js/runtime-main.7e8eb1f1.js.map",
+    "static/js/2.3b420757.chunk.js": "/Billionaire-Taxer/static/js/2.3b420757.chunk.js",
+    "static/js/2.3b420757.chunk.js.map": "/Billionaire-Taxer/static/js/2.3b420757.chunk.js.map",
+    "static/js/3.0521e2cd.chunk.js": "/Billionaire-Taxer/static/js/3.0521e2cd.chunk.js",
+    "static/js/3.0521e2cd.chunk.js.map": "/Billionaire-Taxer/static/js/3.0521e2cd.chunk.js.map",
+    "index.html": "/Billionaire-Taxer/index.html",
+    "static/css/main.d0b29a53.chunk.css.map": "/Billionaire-Taxer/static/css/main.d0b29a53.chunk.css.map",
+    "static/js/2.3b420757.chunk.js.LICENSE.txt": "/Billionaire-Taxer/static/js/2.3b420757.chunk.js.LICENSE.txt",
+    "static/media/ElonMuskPic.32fda5c1.png": "/Billionaire-Taxer/static/media/ElonMuskPic.32fda5c1.png",
+    "static/media/JeffBezoslaughing.a33aefd1.png": "/Billionaire-Taxer/static/media/JeffBezoslaughing.a33aefd1.png",
+    "static/media/bill gates.5006ada5.png": "/Billionaire-Taxer/static/media/bill gates.5006ada5.png",
+    "static/media/markZuckerbergWave.99de0ad1.png": "/Billionaire-Taxer/static/media/markZuckerbergWave.99de0ad1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e8eb1f1.js",
+    "static/js/2.3b420757.chunk.js",
+    "static/css/main.d0b29a53.chunk.css",
+    "static/js/main.c8d0094e.chunk.js"
+  ]
+}
