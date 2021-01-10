@@ -1,7 +1,7 @@
 {
   "name": "eat-the",
   "version": "0.1.0",
-  "homepage": "https://hey-irh.github.io/eat-the/",
+  "homepage": "https://hey-irh.github.io/Billionaire-Taxer",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.1",
@@ -17,11 +17,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
