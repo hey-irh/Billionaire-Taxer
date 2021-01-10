@@ -44,7 +44,7 @@ function TopGrid() {
                   src={ElonMuskPic}
                   alt='Elon Musk'
                   className='billionaire-img'
-                  width='450em'
+                  width='350em'
                   onClick={() => {
                     setbillionaire(209000000000);
                     setname('Elon Musk');
@@ -66,7 +66,7 @@ function TopGrid() {
                   src={JeffBezospic}
                   alt='Jeff Bezos'
                   className='billionaire-img'
-                  width='500em'
+                  width='400em'
                   onClick={() => {
                     setbillionaire(186000000000);
                     setname('Jeff Bezos');
@@ -76,7 +76,7 @@ function TopGrid() {
                 <img
                   src={markZuckpic}
                   alt='Mark Zuckerberg'
-                  width='360em'
+                  width='260em'
                   className='MarkZuckerberg billionaire-img'
                   onClick={() => {
                     setbillionaire(101000000000);
