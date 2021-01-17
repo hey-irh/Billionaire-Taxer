@@ -19,26 +19,26 @@
 
 .MuiSlider-markLabel {
   color: white;
-  font-size: 20px;
+  font-size: 1em;
   margin-left: 1em;
 }
 
-.PrivateValueLabel-label-10 {
+/* .PrivateValueLabel-label-10 {
   margin-right: 12em;
   margin-bottom: 6em;
-}
+} */
 
-.PrivateValueLabel-offset-8 {
+/* .PrivateValueLabel-offset-8 {
   font-size: 1.125em;
-}
+} */
 
-.PrivateValueLabel-circle-9 {
+/* .PrivateValueLabel-circle-9 {
   background-color: #99cc66;
 }
 
 .MuiSlider-thumb {
   background-color: #99cc66;
-}
+} */
 
 .MuiSlider-vertical .MuiSlider-track {
   width: 0.8em;
@@ -46,6 +46,9 @@
 
 #sliderText {
   background-color: #282c34;
+  margin-right: 12em;
+  margin-bottom: 6em;
+  font-size: 1.125em;
 }
 
 /* styles for large screens */

@@ -1,6 +1,6 @@
 .initialStatement {
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #f9f9f9;
   border-radius: 0.5em;
   background-color: #282c34;
@@ -21,9 +21,39 @@
   animation-iteration-count: infinite;
 }
 
-.billionaire-img:hover {
+.elon-img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
+}
+
+.elon-img {
+  width: 10em;
+}
+
+.bill-img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.bill-img {
+  width: 5em;
+}
+.jeff-img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.jeff-img {
+  width: 12em;
+}
+
+.mark-img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.mark-img {
+  width: 9em;
 }
 
 @keyframes shake {
