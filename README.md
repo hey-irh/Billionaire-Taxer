@@ -6,6 +6,12 @@ A fun tool used to demonstrate the inequality in wealth and impact a higher weal
 
 https://hey-irh.github.io/Billionaire-Taxer/
 
+## How to use the App
+
+- Select your billionaire by clicking the relevant picture.
+- Move the slider tax their wealth. As you move down the slider the billionaire's wealth will reduce and fund the social projects in the right hand column.
+- As you move down the slider you will see benchmarks, such as Sri Lanka's GDP & the median US households wealth, these help demonstrate the disparity in wealth.
+
 ### To run it locally `npm start`
 
 Runs the app in the development mode.\
@@ -15,3 +21,7 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 No server required for this app.
+
+### Tech Used
+
+React, CSS, Javascript (ES6), MaterialUI
