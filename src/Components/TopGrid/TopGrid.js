@@ -38,6 +38,13 @@ function TopGrid() {
           <div className='entire'>
             <div className='headers'>
               <h1>BILLIONAIRE TAXER</h1>
+              <p className='intro'>
+                Since 2015 the world's top 1% has owned more wealth than the
+                rest of the population combined.
+                <br></br>
+                Use the slider to tax a billionaire's wealth and help fund
+                social change.
+              </p>
               <p className='picker'>Pick your billionaire</p>
               <div className='images'>
                 <img
@@ -46,7 +53,7 @@ function TopGrid() {
                   className='elon-img billionaire-img'
                   onClick={() => {
                     setbillionaire(209000000000);
-                    setname('Elon Musk');
+                    setname(`Elon Musk's`);
                     setremainingWealth(209000000000);
                   }}
                 />
@@ -76,7 +83,7 @@ function TopGrid() {
                   className='mark-img billionaire-img'
                   onClick={() => {
                     setbillionaire(101000000000);
-                    setname('Mark Zuckerberg');
+                    setname(`Mark Zuckerberg's`);
                     setremainingWealth(101000000000);
                   }}
                 />
@@ -84,9 +91,10 @@ function TopGrid() {
             </div>
             <h2 className='initialStatement'>
               {name} net worth is{' '}
-              {Math.round((billionaire - usAvgWealth) / usAvgWealth) * 100}%
-              above the US average. <p></p>Use the slider to tax his wealth and
-              help fund .....{' '}
+              <span className='valuepercent'>
+                {Math.round((billionaire - usAvgWealth) / usAvgWealth) * 100}%
+              </span>{' '}
+              above the US average.
             </h2>
           </div>
         </Grid>

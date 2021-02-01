@@ -1,16 +1,15 @@
 .statements {
-  text-align: right;
+  text-align: center;
 }
 
 p {
-  font-size: 1.4em;
-  background-color: #282c34;
-  text-align: right;
-  padding: 0.4em;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0.3em;
 }
 
 .paragraph {
-  padding-bottom: 10em;
+  padding-bottom: 30em;
 }
 
 .rendering {
@@ -18,12 +17,12 @@ p {
 }
 
 .big-number {
-  font-size: 4.25em;
+  font-size: 2em;
 }
 
 /* Small device styles */
 @media (max-width: 600px) {
   .big-number {
-    font-size: 3em;
+    font-size: 2em;
   }
 }

@@ -20,6 +20,7 @@
 
 .textBox {
   height: 100%;
+  padding-left: 10em;
 }
 
 /* styles for large screens */
@@ -30,5 +31,82 @@
 
   .textBox {
     padding-right: 5em;
+  }
+
+  .P1 {
+    position: sticky;
+    top: 5em;
+  }
+  .P2 {
+    position: sticky;
+    top: 9em;
+    transform: rotate(3deg) translateX(50px);
+  }
+  .P3 {
+    position: sticky;
+    top: 13em;
+    transform: rotate(-10deg) translateX(-40px);
+  }
+  .P4 {
+    position: sticky;
+    top: 15em;
+    transform: rotate(10deg) translateX(90px);
+  }
+  .P5 {
+    position: sticky;
+    top: 20em;
+    transform: translateX(20px);
+  }
+  .P6 {
+    position: sticky;
+    top: 26em;
+    transform: rotate(-10deg) translateX(250px);
+  }
+  .P7 {
+    position: sticky;
+    top: 25.2em;
+    transform: rotate(10deg) translateX(-50px);
+  }
+
+  .P8 {
+    position: sticky;
+    top: 20em;
+    transform: rotate(10deg) translateX(-150px);
+  }
+
+  .P9 {
+    position: sticky;
+    top: 30em;
+    transform: rotate(-5deg) translateX(-50px);
+  }
+
+  .P10 {
+    position: sticky;
+    top: 29em;
+    transform: translateX(250px);
+  }
+
+  .P11 {
+    position: sticky;
+    top: 34em;
+    transform: translateX(70px);
+  }
+
+  .P12 {
+    position: sticky;
+    top: 40em;
+    transform: rotate(-8deg) translateX(280px);
+  }
+
+  .P13 {
+    position: sticky;
+    top: 40em;
+    transform: rotate(15deg) translateX(-160px);
+  }
+
+  .P14 {
+    position: sticky;
+    top: 15em;
+    transform: translateX(290px);
   }
 }

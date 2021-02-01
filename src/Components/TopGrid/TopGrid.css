@@ -1,14 +1,22 @@
+.intro {
+  font-size: 0.6em;
+  padding-bottom: 1em;
+  margin: 1em;
+  line-height: 120%;
+}
+
 .initialStatement {
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: #f9f9f9;
   border-radius: 0.5em;
-  background-color: #282c34;
-  border: 1px solid #000000;
-  box-shadow: 5px 10px #00000061;
   padding: 1em;
   margin: 1em;
   display: inline-block;
+}
+
+.valuepercent {
+  font-size: 1.5em;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 .picker {
@@ -53,7 +61,7 @@
 }
 
 .mark-img {
-  width: 9em;
+  width: 8.5em;
 }
 
 @keyframes shake {

@@ -20,50 +20,272 @@ export function StatementProvider({ children }) {
   const [playground, setplayground] = useState(0);
   const [mileRoad, setmileRoad] = useState(0);
 
+  //need to add in the missing figures to be zero as at the moment the state is reamining when you move up and down
   useEffect(() => {
-    setsolarEnergy(
-      Math.round((billionaire - remainingWealth) / 1000).toLocaleString()
-    );
-    setUsaSchools(
-      Math.round((billionaire - remainingWealth) / 16269543).toLocaleString()
-    );
-    sethospitals(
-      Math.round((billionaire - remainingWealth) / 112500000).toLocaleString()
-    );
-    setcash(
-      `$${Math.round(
-        (billionaire - remainingWealth) / 328200000
-      ).toLocaleString()}`
-    );
-    setschoolMeals(
-      Math.round((billionaire - remainingWealth) / 2.48).toLocaleString()
-    );
-    setUniScolarship(
-      Math.round((billionaire - remainingWealth) / 60000).toLocaleString()
-    );
-    setcovid(Math.round((billionaire - remainingWealth) / 20).toLocaleString());
+    if (remainingWealth >= 165000000000) {
+      //first 3
+      sethospitals(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.5) / 112500000
+        ).toLocaleString()
+      );
+      setsolarEnergy(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.25) / 1000
+        ).toLocaleString()
+      );
+      setclothing(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.25) / 59
+        ).toLocaleString()
+      );
+      setUsaSchools(0);
+      setcash(0);
+      setschoolMeals(0);
+      setUniScolarship(0);
+      setlibraries(0);
+      setcovid(0);
+      sethomelessNights(0);
+      setcancerTreatment(0);
+      setmileRoad(0);
+      sethouses(0);
+      setplayground(0);
+    } else if (
+      remainingWealth < 165000000000 &&
+      remainingWealth >= 133000000000
+    ) {
+      //first 6
+      sethospitals(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.3) / 112500000
+        ).toLocaleString()
+      );
+      setsolarEnergy(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.12) / 1000
+        ).toLocaleString()
+      );
+      setclothing(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.12) / 59
+        ).toLocaleString()
+      );
+      setUsaSchools(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.16) / 16269543
+        ).toLocaleString()
+      );
+      setcash(
+        `$${Math.round(
+          ((billionaire - remainingWealth) * 0.2) / 328200000
+        ).toLocaleString()}`
+      );
+      setschoolMeals(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.1) / 2.48
+        ).toLocaleString()
+      );
+      setUniScolarship(0);
+      setlibraries(0);
+      setcovid(0);
+      sethomelessNights(0);
+      setcancerTreatment(0);
+      setmileRoad(0);
+      sethouses(0);
+      setplayground(0);
+    }
 
-    setplayground(
-      Math.round((billionaire - remainingWealth) / 29000).toLocaleString()
-    );
-    setclothing(
-      Math.round((billionaire - remainingWealth) / 59).toLocaleString()
-    );
-    sethomelessNights(
-      Math.round((billionaire - remainingWealth) / 25).toLocaleString()
-    );
-    setcancerTreatment(
-      Math.round((billionaire - remainingWealth) / 150000).toLocaleString()
-    );
-    sethouses(
-      Math.round((billionaire - remainingWealth) / 240000).toLocaleString()
-    );
-    setlibraries(
-      Math.round((billionaire - remainingWealth) / 11000000).toLocaleString()
-    );
-    setmileRoad(
-      Math.round((billionaire - remainingWealth) / 28020).toLocaleString()
-    );
+    if (remainingWealth < 133000000000 && remainingWealth >= 100000000000) {
+      //first 9
+      sethospitals(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.2) / 112500000
+        ).toLocaleString()
+      );
+      setsolarEnergy(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.09) / 1000
+        ).toLocaleString()
+      );
+      setclothing(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.09) / 59
+        ).toLocaleString()
+      );
+      setUsaSchools(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.09) / 16269543
+        ).toLocaleString()
+      );
+      setcash(
+        `$${Math.round(
+          ((billionaire - remainingWealth) * 0.13) / 328200000
+        ).toLocaleString()}`
+      );
+      setschoolMeals(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.09) / 2.48
+        ).toLocaleString()
+      );
+      setUniScolarship(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.09) / 60000
+        ).toLocaleString()
+      );
+      setlibraries(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.09) / 11000000
+        ).toLocaleString()
+      );
+      setcovid(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.13) / 20
+        ).toLocaleString()
+      );
+      sethomelessNights(0);
+      setcancerTreatment(0);
+      setmileRoad(0);
+      sethouses(0);
+      setplayground(0);
+    }
+
+    if (remainingWealth < 100000000000 && remainingWealth >= 71000000000) {
+      //first 11
+      setsolarEnergy(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.06) / 1000
+        ).toLocaleString()
+      );
+      setUsaSchools(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.1) / 16269543
+        ).toLocaleString()
+      );
+      sethospitals(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.12) / 112500000
+        ).toLocaleString()
+      );
+      setcash(
+        `$${Math.round(
+          ((billionaire - remainingWealth) * 0.12) / 328200000
+        ).toLocaleString()}`
+      );
+      setschoolMeals(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.06) / 2.48
+        ).toLocaleString()
+      );
+      setUniScolarship(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.07) / 60000
+        ).toLocaleString()
+      );
+      setlibraries(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.07) / 11000000
+        ).toLocaleString()
+      );
+      setcovid(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.1) / 20
+        ).toLocaleString()
+      );
+      setclothing(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.06) / 59
+        ).toLocaleString()
+      );
+      sethomelessNights(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.07) / 25
+        ).toLocaleString()
+      );
+      setcancerTreatment(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.1) / 150000
+        ).toLocaleString()
+      );
+      setmileRoad(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.07) / 28020
+        ).toLocaleString()
+      );
+      sethouses(0);
+      setplayground(0);
+    } else if (remainingWealth < 71000000000) {
+      //All options
+      setsolarEnergy(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.06) / 1000
+        ).toLocaleString()
+      );
+      setUsaSchools(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.08) / 16269543
+        ).toLocaleString()
+      );
+      sethospitals(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.1) / 112500000
+        ).toLocaleString()
+      );
+      setcash(
+        `$${Math.round(
+          ((billionaire - remainingWealth) * 0.1) / 328200000
+        ).toLocaleString()}`
+      );
+      setschoolMeals(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.05) / 2.48
+        ).toLocaleString()
+      );
+      setUniScolarship(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.06) / 60000
+        ).toLocaleString()
+      );
+      setlibraries(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.06) / 11000000
+        ).toLocaleString()
+      );
+      setcovid(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.1) / 20
+        ).toLocaleString()
+      );
+      setplayground(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.06) / 29000
+        ).toLocaleString()
+      );
+      setclothing(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.05) / 59
+        ).toLocaleString()
+      );
+      sethomelessNights(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.06) / 25
+        ).toLocaleString()
+      );
+      setcancerTreatment(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.1) / 150000
+        ).toLocaleString()
+      );
+      sethouses(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.06) / 240000
+        ).toLocaleString()
+      );
+      setmileRoad(
+        Math.round(
+          ((billionaire - remainingWealth) * 0.06) / 28020
+        ).toLocaleString()
+      );
+    }
   }, [remainingWealth]);
 
   return (

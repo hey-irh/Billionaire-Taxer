@@ -16,7 +16,7 @@ function valuetext(value) {
   return `$${value}`;
 }
 
-export default function VerticalSlider(props) {
+export default function VerticalSlider() {
   const {
     billionaire,
     name,
@@ -70,7 +70,7 @@ export default function VerticalSlider(props) {
         <StylesProvider injectFirst>
           <div className={classes.root}>
             <Slider
-              key={`slider-${billionaire}`}
+              key={`slider-${billionaire + Math.random}`}
               className='slider'
               orientation='vertical'
               defaultValue={billionaire}
