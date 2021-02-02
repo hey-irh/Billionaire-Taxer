@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Billionaire-Taxer/static/css/main.64e8db2b.chunk.css",
-    "main.js": "/Billionaire-Taxer/static/js/main.5d70981c.chunk.js",
-    "main.js.map": "/Billionaire-Taxer/static/js/main.5d70981c.chunk.js.map",
+    "main.js": "/Billionaire-Taxer/static/js/main.3c74b803.chunk.js",
+    "main.js.map": "/Billionaire-Taxer/static/js/main.3c74b803.chunk.js.map",
     "runtime-main.js": "/Billionaire-Taxer/static/js/runtime-main.7e8eb1f1.js",
     "runtime-main.js.map": "/Billionaire-Taxer/static/js/runtime-main.7e8eb1f1.js.map",
     "static/js/2.225129f3.chunk.js": "/Billionaire-Taxer/static/js/2.225129f3.chunk.js",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.7e8eb1f1.js",
     "static/js/2.225129f3.chunk.js",
     "static/css/main.64e8db2b.chunk.css",
-    "static/js/main.5d70981c.chunk.js"
+    "static/js/main.3c74b803.chunk.js"
   ]
 }
