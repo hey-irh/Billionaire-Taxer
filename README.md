@@ -4,7 +4,7 @@ A fun tool used to demonstrate the inequality in wealth and impact a higher weal
 
 ## Visit the App at:
 
-https://hey-irh.github.io/Billionaire-Taxer/
+https://hey-irh.github.io/Billionaire-Taxer/ (Currently desktop format only)
 
 ## How to use the App
 
