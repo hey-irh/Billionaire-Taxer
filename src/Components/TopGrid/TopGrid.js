@@ -52,83 +52,83 @@ function TopGrid() {
               </p>
               <p className='picker'>Pick your billionaire</p>
               <div className='images'>
-                {name !== `Elon Musk's` && (
-                  <img
-                    src={ElonMuskPic}
-                    alt='Elon Musk'
-                    className='ElonMusk-img billionaire-img'
-                    onClick={() => {
-                      setbillionaire(209000000000);
-                      setname(`Elon Musk's`);
-                      setremainingWealth(209000000000);
-                    }}
-                  />
-                )}
+                {/* {name !== `Elon Musk's` && ( */}
+                <img
+                  src={ElonMuskPic}
+                  alt='Elon Musk'
+                  className='ElonMusk-img billionaire-img'
+                  onClick={() => {
+                    setbillionaire(209000000000);
+                    setname(`Elon Musk's`);
+                    setremainingWealth(209000000000);
+                  }}
+                />
+                {/* )} */}
 
-                {name === `Elon Musk's` && (
+                {/* {name === `Elon Musk's` && (
                   <img
                     src={ElonMuskPicOutlined}
                     alt='Elon Musk'
                     className='ElonMusk-img billionaire-img'
                   />
-                )}
-                {name !== 'Bill Gates' && (
-                  <img
-                    src={billGatesPic}
-                    alt='Bill Gates'
-                    className='BillGates-img billionaire-img'
-                    onClick={() => {
-                      setbillionaire(134000000000);
-                      setname('Bill Gates');
-                      setremainingWealth(134000000000);
-                    }}
-                  />
-                )}
-                {name === 'Bill Gates' && (
+                )} */}
+                {/* {name !== 'Bill Gates' && ( */}
+                <img
+                  src={billGatesPic}
+                  alt='Bill Gates'
+                  className='BillGates-img billionaire-img'
+                  onClick={() => {
+                    setbillionaire(134000000000);
+                    setname('Bill Gates');
+                    setremainingWealth(134000000000);
+                  }}
+                />
+                {/* )} */}
+                {/* {name === 'Bill Gates' && (
                   <img
                     src={billGatesPicOutlined}
                     alt='Bill Gates'
                     className='BillGates-img billionaire-img'
                   />
-                )}
-                {name !== 'Jeff Bezos' && (
-                  <img
-                    src={JeffBezospic}
-                    alt='Jeff Bezos'
-                    className='JeffBezos-img billionaire-img'
-                    onClick={() => {
-                      setbillionaire(186000000000);
-                      setname('Jeff Bezos');
-                      setremainingWealth(186000000000);
-                    }}
-                  />
-                )}
-                {name === 'Jeff Bezos' && (
+                )} */}
+                {/* {name !== 'Jeff Bezos' && ( */}
+                <img
+                  src={JeffBezospic}
+                  alt='Jeff Bezos'
+                  className='JeffBezos-img billionaire-img'
+                  onClick={() => {
+                    setbillionaire(186000000000);
+                    setname('Jeff Bezos');
+                    setremainingWealth(186000000000);
+                  }}
+                />
+                {/* )} */}
+                {/* {name === 'Jeff Bezos' && (
                   <img
                     src={JeffBezosOutlined}
                     alt='Jeff Bezos'
                     className='JeffBezos-img billionaire-img'
                   />
-                )}
-                {name !== `Mark Zuckerberg's` && (
-                  <img
-                    src={markZuckpic}
-                    alt='Mark Zuckerberg'
-                    className='MarkZuckerberg-img billionaire-img'
-                    onClick={() => {
-                      setbillionaire(101000000000);
-                      setname(`Mark Zuckerberg's`);
-                      setremainingWealth(101000000000);
-                    }}
-                  />
-                )}
-                {name === `Mark Zuckerberg's` && (
+                )} */}
+                {/* {name !== `Mark Zuckerberg's` && ( */}
+                <img
+                  src={markZuckpic}
+                  alt='Mark Zuckerberg'
+                  className='MarkZuckerberg-img billionaire-img'
+                  onClick={() => {
+                    setbillionaire(101000000000);
+                    setname(`Mark Zuckerberg's`);
+                    setremainingWealth(101000000000);
+                  }}
+                />
+                {/* )} */}
+                {/* {name === `Mark Zuckerberg's` && (
                   <img
                     src={markZuckpicOutlined}
                     alt='Mark Zuckerberg'
                     className='MarkZuckerberg-img billionaire-img'
                   />
-                )}
+                )} */}
               </div>
             </div>
             <h2 className='initialStatement'>
