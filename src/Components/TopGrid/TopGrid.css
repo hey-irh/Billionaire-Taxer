@@ -29,38 +29,38 @@
   animation-iteration-count: infinite;
 }
 
-.elon-img:hover {
+.ElonMusk-img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.elon-img {
+.ElonMusk-img {
   width: 10em;
 }
 
-.bill-img:hover {
+.BillGates-img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.bill-img {
+.BillGates-img {
   width: 5em;
 }
-.jeff-img:hover {
+.JeffBezos-img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.jeff-img {
+.JeffBezos-img {
   width: 12em;
 }
 
-.mark-img:hover {
+.MarkZuckerberg-img:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.mark-img {
+.MarkZuckerberg-img {
   width: 8.5em;
 }
 

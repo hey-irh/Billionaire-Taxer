@@ -4,6 +4,10 @@ const marks = [
     label: 'USA median wealth: $65,904',
   },
   {
+    value: 1000000000,
+    label: '💵 1 billion US dollars',
+  },
+  {
     value: 2608000000,
     label: 'Eritrea GDP: $2,608,000,000',
   },

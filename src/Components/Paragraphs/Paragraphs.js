@@ -1,4 +1,3 @@
-import { useAppContext } from '../../Context';
 import './Paragraphs.css';
 
 function Paragraph({ ItemNumber, text, emoji }) {

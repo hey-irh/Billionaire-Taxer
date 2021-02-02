@@ -23,6 +23,11 @@
   padding-left: 10em;
 }
 
+.billionStatement {
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
 /* styles for large screens */
 @media (min-width: 600px) {
   .tax {

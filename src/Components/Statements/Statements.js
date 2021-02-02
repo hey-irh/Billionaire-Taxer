@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAppContext } from '../../Context';
 import { useStatementContext } from '../../StatementContext';
-
+import Grid from '@material-ui/core/Grid';
 import Paragraph from '../Paragraphs/Paragraphs';
 import './Statements.css';
 
@@ -24,28 +24,23 @@ function Statements() {
     mileRoad,
   } = useStatementContext();
   const [energyhome, setenergyhome] = useState(0);
+  const [abolish, setabolish] = useState(false);
 
   useEffect(() => {
     let energyhomecalc = parseInt(solarEnergy);
     setenergyhome(energyhomecalc * 1000 * 200);
   }, [remainingWealth, solarEnergy]);
 
-  //Looking for collision using offsetTop
-  // let P2 = document.getElementsByClassName('P2');
-  // let P1 = document.getElementsByClassName('P1');
-
-  // useEffect(() => {
-  //   console.log(P2[0].offsetTop);
-  //   if (P2[0].offsetTop - P1[0].offsetTop === 64) {
-  //     console.log('collisison');
-  //     console.log(P2[0].offsetTop);
-  //   }
-  // }, [P1, P2]);
+  useEffect(() => {
+    if (remainingWealth <= 1000000000) {
+      setabolish(true);
+    }
+  }, [remainingWealth]);
 
   return (
     <div className='textBox'>
       <h2 className='tax'>
-        By taxing {name} wealth {tax}% it could pay for:
+        Taxing {name} wealth by {tax}% could pay for:
       </h2>
       <div className='P1'>
         <Paragraph
@@ -119,6 +114,17 @@ function Statements() {
           text={'patients cancer treatment'}
           emoji='🚑'
         />
+        <div className='billionStatement'>
+          {abolish && (
+            <p>
+              A billion dollars is more than any individual needs. <br></br>
+              <br></br>
+              Proposal's to abolishing billionaires would help close the gap
+              between the world's richest and poorest and help create a fairer
+              society.
+            </p>
+          )}
+        </div>
       </div>
 
       <div className='P12'>
