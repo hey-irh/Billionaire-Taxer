@@ -10,13 +10,6 @@ h1 {
   color: white;
 }
 
-.bottomStatement {
-  text-align: center;
-  font-size: 2em;
-  padding-bottom: 3em;
-  font-family: 'Alegreya Sans', sans-serif;
-}
-
 a {
   color: white;
 }
@@ -29,5 +22,11 @@ a {
     text-align: center;
     font-size: 2em;
   }
-  
+}
+
+/* Small device styles */
+@media (max-width: 600px) {
+  .bottomStatement {
+    font-size: 1.5em;
+  }
 }

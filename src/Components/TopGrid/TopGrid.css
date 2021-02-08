@@ -103,14 +103,18 @@
 /* Small device styles */
 @media (max-width: 600px) {
   .picker {
-    font-size: 2em;
+    font-size: 1.2em;
+    text-align: center;
   }
 
   .initialStatement {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .billionaire-img {
     max-width: 9em;
+  }
+  .intro {
+    font-size: 1em;
   }
 }

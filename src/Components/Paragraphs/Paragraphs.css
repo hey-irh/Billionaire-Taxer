@@ -23,6 +23,10 @@ p {
 /* Small device styles */
 @media (max-width: 600px) {
   .big-number {
-    font-size: 2em;
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.8em;
+    text-align: left;
   }
 }

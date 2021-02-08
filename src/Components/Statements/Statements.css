@@ -1,14 +1,13 @@
 .tax {
   text-align: center;
   position: sticky;
-  font-size: 2em;
+  font-size: 1em;
   top: 0em;
   background-color: #282c34;
   font-family: 'Alegreya Sans', sans-serif;
   color: white;
   text-align: right;
   padding-bottom: 1.2em;
-  padding-top: 0.9em;
 }
 
 .networth {
@@ -24,8 +23,16 @@
 }
 
 .billionStatement {
-  padding-left: 8em;
-  padding-right: 8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-style: italic;
+  font-size: 0.8em;
+  background-color: #550e0e;
+  border-radius: 15px;
+}
+
+.billionStatement p {
+  padding: 1em;
 }
 
 /* styles for large screens */
@@ -113,5 +120,81 @@
     position: sticky;
     top: 15em;
     transform: translateX(290px);
+  }
+}
+
+/* Small device styles */
+@media (max-width: 600px) {
+  .tax {
+    text-align: center;
+    position: sticky;
+    top: 2em;
+  }
+  .textBox {
+    height: 100%;
+    padding-left: 4em;
+  }
+  .P1 {
+    position: sticky;
+    top: 4em;
+  }
+  .P2 {
+    position: sticky;
+    top: 7em;
+  }
+  .P3 {
+    position: sticky;
+    top: 10.5em;
+  }
+  .P4 {
+    position: sticky;
+    top: 13.5em;
+  }
+  .P5 {
+    position: sticky;
+    top: 16.9em;
+  }
+  .P6 {
+    position: sticky;
+    top: 20em;
+  }
+  .P7 {
+    position: sticky;
+    top: 23em;
+  }
+
+  .P8 {
+    position: sticky;
+    top: 26em;
+  }
+
+  .P9 {
+    position: sticky;
+    top: 29em;
+  }
+
+  .P10 {
+    position: sticky;
+    top: 32em;
+  }
+
+  .P11 {
+    position: sticky;
+    top: 35em;
+  }
+
+  .P12 {
+    position: sticky;
+    top: 38em;
+  }
+
+  .P13 {
+    position: sticky;
+    top: 41em;
+  }
+
+  .P14 {
+    position: sticky;
+    top: 44em;
   }
 }

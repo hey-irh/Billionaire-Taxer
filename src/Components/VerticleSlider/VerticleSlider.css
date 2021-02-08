@@ -45,10 +45,19 @@
 /* styles for large screens */
 @media (min-width: 600px) {
   .main {
-    padding-top: 10em;
+    padding-top: 6em;
+    position: relative;
+    z-index: 1;
   }
 
   .slider {
     margin-left: 20em;
+  }
+}
+
+/* Small device styles */
+@media (max-width: 600px) {
+  .MuiSlider-markLabel {
+    font-size: 0.7em;
   }
 }

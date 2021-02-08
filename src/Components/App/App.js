@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import TopGrid from '../TopGrid/TopGrid';
 import MainGrid from '../MainGrid/MainGrid';
+import BottomGrid from '../BottomGrid/BottomGrid';
 import { AppProvider } from '../../Context';
 
 function App() {
@@ -9,14 +10,9 @@ function App() {
     <AppProvider>
       <div>
         <TopGrid />
+
         <MainGrid className='mainGrid' />
-        <div className='bottomStatement'>
-          {' '}
-          Learn more about wealth inequality at: <br></br>
-          <a href='https://inequality.org/facts/wealth-inequality/'>
-            inequality.org/facts/wealth-inequality/
-          </a>
-        </div>
+        <BottomGrid />
       </div>
     </AppProvider>
   );
