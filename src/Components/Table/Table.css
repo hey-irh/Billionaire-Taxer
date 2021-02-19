@@ -1,37 +1,9 @@
-.Table {
-  text-align: center;
-  width: 60%;
-  padding-bottom: 3em;
-  margin: auto;
+h3 {
+  padding-bottom: 1em;
+  font-weight: bold;
 }
 
-.MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded {
-  background-color: #30353f;
-  align-items: center;
-  color: white;
-  align-items: right;
-}
-
-.title {
-  font-size: 0.9em;
-}
-
-.MuiSvgIcon-root {
-  color: white;
-}
-
-table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-th,
-td {
-  border: 1px solid black;
-  font-size: 0.8em;
-  align-items: center;
-  background-color: #282c34;
+th {
   color: white;
   padding: 0.5em;
 }

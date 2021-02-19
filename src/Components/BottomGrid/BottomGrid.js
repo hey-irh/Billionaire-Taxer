@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Table from '../Table/Table';
+import TableData from '../Table/Table';
 import './BottomGrid.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -21,17 +21,18 @@ function BottomGrid() {
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        <Grid item xs={8}>
+        <Grid item xs={12}>
           <div className='bottomStatement'>
-            Learn more about wealth inequality at:{'  '}
+            Learn more about wealth inequality at:
+            {'  '}
             <a href='https://inequality.org/facts/wealth-inequality/'>
               inequality.org/facts/wealth-inequality/
             </a>
           </div>
         </Grid>
-        <Grid item xs={4}>
-          <Table />
-        </Grid>
+        {/* <Grid item xs={12}>
+          <TableData />
+        </Grid> */}
       </Grid>
     </div>
   );

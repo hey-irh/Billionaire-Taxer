@@ -3,14 +3,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useAppContext } from '../../Context';
 import Grid from '@material-ui/core/Grid';
 import './TopGrid.css';
-import JeffBezospic from './JeffBezoslaughing.png';
-import markZuckpic from './markZuckerbergWave.png';
-import ElonMuskPic from './ElonMuskPic.png';
-import billGatesPic from './bill gates.png';
-import JeffBezosOutlined from './JeffBezoslaughingOutlined.png';
-import ElonMuskPicOutlined from './ElonMuskPicOutlined.png';
-import billGatesPicOutlined from './bill gatesOutlined.png';
-import markZuckpicOutlined from './markZuckerbergWaveOutlined.png';
+import JeffBezospic from './BillionairesImages/JeffBezoslaughing.png';
+import markZuckpic from './BillionairesImages/markZuckerbergWave.png';
+import ElonMuskPic from './BillionairesImages/ElonMuskPic.png';
+import billGatesPic from './BillionairesImages/bill gates.png';
+// import JeffBezosOutlined from './BillionairesImages/JeffBezoslaughingOutlined.png';
+// import ElonMuskPicOutlined from './BillionairesImages/ElonMuskPicOutlined.png';
+// import billGatesPicOutlined from './BillionairesImages/bill gatesOutlined.png';
+// import markZuckpicOutlined from './BillionairesImages/markZuckerbergWaveOutlined.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,7 +34,6 @@ function TopGrid() {
     billionaire,
   } = useAppContext();
   const classes = useStyles();
-  console.log(name);
 
   return (
     <div className={classes.root}>
@@ -63,16 +62,15 @@ function TopGrid() {
                     setremainingWealth(209000000000);
                   }}
                 />
-                {/* )} */}
-
-                {/* {name === `Elon Musk's` && (
-                  <img
+                {/* )}
+                {name === `Elon Musk's` && ( */}
+                {/* <img
                     src={ElonMuskPicOutlined}
                     alt='Elon Musk'
                     className='ElonMusk-img billionaire-img'
                   />
-                )} */}
-                {/* {name !== 'Bill Gates' && ( */}
+                )}
+                {name !== 'Bill Gates' && ( */}
                 <img
                   src={billGatesPic}
                   alt='Bill Gates'
@@ -83,15 +81,15 @@ function TopGrid() {
                     setremainingWealth(134000000000);
                   }}
                 />
-                {/* )} */}
-                {/* {name === 'Bill Gates' && (
+                {/* )}
+                {name === 'Bill Gates' && (
                   <img
                     src={billGatesPicOutlined}
                     alt='Bill Gates'
                     className='BillGates-img billionaire-img'
                   />
-                )} */}
-                {/* {name !== 'Jeff Bezos' && ( */}
+                )}
+                {name !== 'Jeff Bezos' && ( */}
                 <img
                   src={JeffBezospic}
                   alt='Jeff Bezos'
@@ -102,15 +100,15 @@ function TopGrid() {
                     setremainingWealth(186000000000);
                   }}
                 />
-                {/* )} */}
-                {/* {name === 'Jeff Bezos' && (
+                {/* )}
+                {name === 'Jeff Bezos' && (
                   <img
                     src={JeffBezosOutlined}
                     alt='Jeff Bezos'
                     className='JeffBezos-img billionaire-img'
                   />
-                )} */}
-                {/* {name !== `Mark Zuckerberg's` && ( */}
+                )}
+                {name !== `Mark Zuckerberg's` && ( */}
                 <img
                   src={markZuckpic}
                   alt='Mark Zuckerberg'
@@ -121,8 +119,8 @@ function TopGrid() {
                     setremainingWealth(101000000000);
                   }}
                 />
-                {/* )} */}
-                {/* {name === `Mark Zuckerberg's` && (
+                {/* )}
+                {name === `Mark Zuckerberg's` && (
                   <img
                     src={markZuckpicOutlined}
                     alt='Mark Zuckerberg'

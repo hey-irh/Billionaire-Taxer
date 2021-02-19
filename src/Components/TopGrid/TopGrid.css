@@ -115,6 +115,7 @@
     max-width: 9em;
   }
   .intro {
-    font-size: 1em;
+    font-size: 0.8em;
+    text-align: center;
   }
 }

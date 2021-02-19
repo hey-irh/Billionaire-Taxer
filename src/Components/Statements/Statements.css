@@ -39,6 +39,7 @@
 @media (min-width: 600px) {
   .tax {
     font-size: 2em;
+    padding-top: 0.8em;
   }
 
   .textBox {

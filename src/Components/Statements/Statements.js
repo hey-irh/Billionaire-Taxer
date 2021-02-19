@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAppContext } from '../../Context';
 import { useStatementContext } from '../../StatementContext';
-import Grid from '@material-ui/core/Grid';
 import Paragraph from '../Paragraphs/Paragraphs';
 import './Statements.css';
 
